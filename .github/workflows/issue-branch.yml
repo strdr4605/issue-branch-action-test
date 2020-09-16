@@ -1,0 +1,11 @@
+on:
+  create
+jobs:
+  issue-branch:
+    name: 'Issue Branch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Issue Branch check'
+        uses: strdr4605/issue-branch-action@v0
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
